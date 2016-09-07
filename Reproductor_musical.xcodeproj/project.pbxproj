@@ -14,6 +14,10 @@
 		FAD863591D7F27F500A3138E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD863571D7F27F500A3138E /* LaunchScreen.storyboard */; };
 		FAD863641D7F27F500A3138E /* Reproductor_musicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD863631D7F27F500A3138E /* Reproductor_musicalTests.swift */; };
 		FAD8636F1D7F27F500A3138E /* Reproductor_musicalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD8636E1D7F27F500A3138E /* Reproductor_musicalUITests.swift */; };
+		FAD863801D7F45BE00A3138E /* american.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAD8637C1D7F45BE00A3138E /* american.mp3 */; };
+		FAD863811D7F45BE00A3138E /* madness.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAD8637D1D7F45BE00A3138E /* madness.mp3 */; };
+		FAD863821D7F45BE00A3138E /* phoenix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAD8637E1D7F45BE00A3138E /* phoenix.mp3 */; };
+		FAD863831D7F45BE00A3138E /* tron.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAD8637F1D7F45BE00A3138E /* tron.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		FAD8636A1D7F27F500A3138E /* Reproductor_musicalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Reproductor_musicalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD8636E1D7F27F500A3138E /* Reproductor_musicalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reproductor_musicalUITests.swift; sourceTree = "<group>"; };
 		FAD863701D7F27F500A3138E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD8637C1D7F45BE00A3138E /* american.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = american.mp3; sourceTree = "<group>"; };
+		FAD8637D1D7F45BE00A3138E /* madness.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = madness.mp3; sourceTree = "<group>"; };
+		FAD8637E1D7F45BE00A3138E /* phoenix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = phoenix.mp3; sourceTree = "<group>"; };
+		FAD8637F1D7F45BE00A3138E /* tron.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tron.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 		FAD8634D1D7F27F500A3138E /* Reproductor_musical */ = {
 			isa = PBXGroup;
 			children = (
+				FAD8637C1D7F45BE00A3138E /* american.mp3 */,
+				FAD8637D1D7F45BE00A3138E /* madness.mp3 */,
+				FAD8637E1D7F45BE00A3138E /* phoenix.mp3 */,
+				FAD8637F1D7F45BE00A3138E /* tron.mp3 */,
 				FAD8634E1D7F27F500A3138E /* AppDelegate.swift */,
 				FAD863501D7F27F500A3138E /* ViewController.swift */,
 				FAD863521D7F27F500A3138E /* Main.storyboard */,
@@ -231,6 +243,10 @@
 			files = (
 				FAD863591D7F27F500A3138E /* LaunchScreen.storyboard in Resources */,
 				FAD863561D7F27F500A3138E /* Assets.xcassets in Resources */,
+				FAD863821D7F45BE00A3138E /* phoenix.mp3 in Resources */,
+				FAD863811D7F45BE00A3138E /* madness.mp3 in Resources */,
+				FAD863831D7F45BE00A3138E /* tron.mp3 in Resources */,
+				FAD863801D7F45BE00A3138E /* american.mp3 in Resources */,
 				FAD863541D7F27F500A3138E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
