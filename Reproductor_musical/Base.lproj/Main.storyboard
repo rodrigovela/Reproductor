@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F2L-wY-FIW">
-                                <rect key="frame" x="180" y="28" width="233" height="233"/>
+                                <rect key="frame" x="184" y="49" width="233" height="228"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="fNz-7z-V0P"/>
                                 </constraints>
@@ -67,7 +68,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-bc-QS9">
                                 <rect key="frame" x="334" y="335" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="XnU-ic-nwm">
@@ -76,9 +77,16 @@
                                     <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zXY-rP-Iud"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-K5-AjI">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="TgY-K5-AjI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4e3-iV-HCw"/>
                             <constraint firstItem="JbE-nM-kJh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7CU-tW-bjG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1t8-DT-CaM" secondAttribute="bottom" constant="32" id="7IH-Ff-fDa"/>
                             <constraint firstItem="IgS-bc-QS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="55" id="8MR-r2-aBb"/>
@@ -87,15 +95,17 @@
                             <constraint firstItem="hBF-EQ-eEg" firstAttribute="baseline" secondItem="Tcd-TS-JGM" secondAttribute="baseline" id="BpU-NO-pf2"/>
                             <constraint firstItem="JbE-nM-kJh" firstAttribute="baseline" secondItem="hBF-EQ-eEg" secondAttribute="baseline" id="HTC-uL-7Hc"/>
                             <constraint firstItem="XnU-ic-nwm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-68" id="IRa-QP-7Dd"/>
-                            <constraint firstItem="F2L-wY-FIW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="K63-8o-iRB"/>
+                            <constraint firstItem="F2L-wY-FIW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="K63-8o-iRB"/>
                             <constraint firstItem="1t8-DT-CaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mvd-bu-wtN"/>
+                            <constraint firstItem="TgY-K5-AjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4A-Vb-HTx"/>
                             <constraint firstItem="XnU-ic-nwm" firstAttribute="top" secondItem="hBF-EQ-eEg" secondAttribute="bottom" constant="16" id="Qdr-Ru-ym9"/>
                             <constraint firstItem="Tcd-TS-JGM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="18" id="RxE-e7-2ge"/>
-                            <constraint firstItem="F2L-wY-FIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-3.5" id="Umu-kk-EAq"/>
+                            <constraint firstItem="F2L-wY-FIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="Umu-kk-EAq"/>
                             <constraint firstItem="jbK-om-qIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="88" id="WJC-Cq-2Gh"/>
                             <constraint firstItem="Tcd-TS-JGM" firstAttribute="leading" secondItem="hBF-EQ-eEg" secondAttribute="trailing" constant="8" symbolic="YES" id="aD8-z8-9tm"/>
+                            <constraint firstItem="F2L-wY-FIW" firstAttribute="top" secondItem="TgY-K5-AjI" secondAttribute="bottom" constant="8" symbolic="YES" id="c5X-WF-azx"/>
                             <constraint firstItem="Tcd-TS-JGM" firstAttribute="baseline" secondItem="jbK-om-qIT" secondAttribute="baseline" id="ed2-Ai-94G"/>
-                            <constraint firstItem="JbE-nM-kJh" firstAttribute="top" secondItem="F2L-wY-FIW" secondAttribute="bottom" constant="24" id="nsg-Jr-Vnc"/>
+                            <constraint firstItem="JbE-nM-kJh" firstAttribute="top" secondItem="F2L-wY-FIW" secondAttribute="bottom" constant="8" id="nsg-Jr-Vnc"/>
                             <constraint firstItem="jbK-om-qIT" firstAttribute="leading" secondItem="Tcd-TS-JGM" secondAttribute="trailing" constant="8" symbolic="YES" id="ozg-1B-M0i"/>
                             <constraint firstItem="JbE-nM-kJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-103" id="syy-jm-y2A"/>
                             <constraint firstItem="hBF-EQ-eEg" firstAttribute="leading" secondItem="JbE-nM-kJh" secondAttribute="trailing" constant="8" symbolic="YES" id="z59-D0-Yed"/>
@@ -103,6 +113,8 @@
                     </view>
                     <connections>
                         <outlet property="coverImage" destination="F2L-wY-FIW" id="iBS-RQ-XRO"/>
+                        <outlet property="pickerView" destination="1t8-DT-CaM" id="k5R-Ae-cyV"/>
+                        <outlet property="songLabel" destination="TgY-K5-AjI" id="iIe-96-gRH"/>
                         <outlet property="stepper" destination="XnU-ic-nwm" id="SV1-ba-Dll"/>
                         <outlet property="volumeLabel" destination="IgS-bc-QS9" id="XmA-eg-sA8"/>
                     </connections>

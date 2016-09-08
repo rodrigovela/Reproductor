@@ -12,6 +12,8 @@ import AVFoundation
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var coverImage: UIImageView!
+    @IBOutlet weak var songLabel: UILabel!
+    @IBOutlet weak var pickerView: UIPickerView!
     
     var reproductor: AVAudioPlayer!
     let songName = [["madness","madness"],["american idiot","american"],["the phoenix","phoenix"],["tron: legacy","tron"]]
@@ -30,7 +32,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         volumeLabel.text = "5"
         stepper.wraps = false
         stepper.autorepeat = true
-        
+        self.songLabel.text = self.songName[0][0]
         self.coverImage.image = UIImage(named: "madness")
         madness = NSBundle.mainBundle().URLForResource("madness", withExtension: "mp3")
         american = NSBundle.mainBundle().URLForResource("american", withExtension: "mp3")
@@ -109,6 +111,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             }
         }
         
+        self.songLabel.text = self.songName[row][0]
+        
     }
     
     @IBAction func random(sender: AnyObject) {
@@ -141,7 +145,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func getSong() -> NSURL {
+        
         let posicion = Int(arc4random()) % songName.count
+        self.songLabel.text = self.songName[posicion][0]
         
         var l = madness!
         
@@ -159,6 +165,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         self.coverImage.image = UIImage(named: self.songName[posicion][1])
+        self.pickerView.selectRow(posicion, inComponent: 0, animated: true)
         
         return l
     }
